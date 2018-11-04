@@ -58,7 +58,7 @@ hfPosFilterTh5 =hfPosFilter.clone(src="hfPosTowersTh5")
 hfNegFilterTh5 =hfNegFilter.clone(src="hfNegTowersTh5")  
 
 # one HF tower above threshold on each side
-hfCoincFilter = cms.Sequence(
+hfCoincFilterTh3 = cms.Sequence(
     towersAboveThreshold *
     hfPosTowers *
     hfNegTowers *
@@ -96,7 +96,7 @@ hfNegFilter2Th4 = hfNegFilterTh4.clone(minNumber=cms.uint32(2))
 hfPosFilter2Th5 = hfPosFilterTh5.clone(minNumber=cms.uint32(2))
 hfNegFilter2Th5 = hfNegFilterTh5.clone(minNumber=cms.uint32(2))
 
-hfCoincFilter2 = cms.Sequence(
+hfCoincFilter2Th3 = cms.Sequence(
     towersAboveThreshold *
     hfPosTowers *
     hfNegTowers *
@@ -134,7 +134,7 @@ hfNegFilter3Th4 = hfNegFilterTh4.clone(minNumber=cms.uint32(3))
 hfPosFilter3Th5 = hfPosFilterTh5.clone(minNumber=cms.uint32(3))
 hfNegFilter3Th5 = hfNegFilterTh5.clone(minNumber=cms.uint32(3))
 
-hfCoincFilter3 = cms.Sequence(
+hfCoincFilter3Th3 = cms.Sequence(
     towersAboveThreshold *
     hfPosTowers *
     hfNegTowers *
@@ -172,7 +172,7 @@ hfNegFilter4Th4 = hfNegFilterTh4.clone(minNumber=cms.uint32(4))
 hfPosFilter4Th5 = hfPosFilterTh5.clone(minNumber=cms.uint32(4))
 hfNegFilter4Th5 = hfNegFilterTh5.clone(minNumber=cms.uint32(4))
 
-hfCoincFilter4 = cms.Sequence(
+hfCoincFilter4Th3 = cms.Sequence(
     towersAboveThreshold *
     hfPosTowers *
     hfNegTowers *
@@ -210,7 +210,7 @@ hfNegFilter5Th4 = hfNegFilterTh4.clone(minNumber=cms.uint32(5))
 hfPosFilter5Th5 = hfPosFilterTh5.clone(minNumber=cms.uint32(5))
 hfNegFilter5Th5 = hfNegFilterTh5.clone(minNumber=cms.uint32(5))
 
-hfCoincFilter5 = cms.Sequence(
+hfCoincFilter5Th3 = cms.Sequence(
     towersAboveThreshold *
     hfPosTowers *
     hfNegTowers *
